@@ -18,6 +18,7 @@ class StatesDemo extends Component {
         <div>            
             <button onClick={() => this.changeMessage()}>Click Me for state demo</button>
             <h2>{this.state.message}</h2>
+            <p>-------------------------------</p>
         </div>
         ) 
     }

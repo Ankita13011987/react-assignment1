@@ -13,6 +13,7 @@ function UseEffectDemo() {
       <button onClick={() => setCount(count + 1)}>
         Click me
       </button>
+      <p>---------------------</p>
     </div>
   );
 }

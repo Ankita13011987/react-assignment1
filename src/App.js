@@ -5,19 +5,21 @@ import FunctionalCompDemo from "./functionalComponent"
 import PropsDemo from "./demoProps"
 import StatesDemo from "./demoState"
 import LifeCycleMethodsDemo from "./lifeCycleMethod.js"
-import UseEffectDemo from "./useEffect.js"
-import UseStateDemo from "./useState.js"
+import functionalUseState from "./functionalUseState.js"
+import UseEffectDemo from "./UseStateDemo.js"
+import FunctionalUseEffect from "./FunctionalUseEffect.js"
+import propDrillingContext from "./propDrillingContext.js"
 
 export default function App() {
   return (
     <div>
-      {/* <ClassCompDemo></ClassCompDemo>  
+      <ClassCompDemo></ClassCompDemo>  
       <FunctionalCompDemo></FunctionalCompDemo> 
       <PropsDemo name="Ankita Singh"/>   
-      <StatesDemo></StatesDemo> */}
-      <LifeCycleMethodsDemo></LifeCycleMethodsDemo>
-      <UseEffectDemo></UseEffectDemo>
-      <UseStateDemo></UseStateDemo>
+      <StatesDemo></StatesDemo> 
+       <LifeCycleMethodsDemo></LifeCycleMethodsDemo>
+      <UseEffectDemo></UseEffectDemo>        
+       <FunctionalUseEffect></FunctionalUseEffect>       
     </div>
   );
 }

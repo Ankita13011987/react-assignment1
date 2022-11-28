@@ -4,18 +4,18 @@ class LifeCycleMethodsDemo extends Component {
   constructor() {
     super();
     this.state = {
-      message: 'Hello from life Cycle Demo!',
+      message: 'This is life Cycle Demo of react',
     };
-    console.log('Hello From constructor!');
+    console.log('I am constructor!');
   }
 
   static getDerivedStateFromProps() {
-    console.log('Hello From getDerivedStateFromProps!');
+    console.log('I am getDerivedStateFromProps!');
     return null;
   }
 
   componentDidMount() {
-    console.log('Hello From componentDidMount!');
+    console.log('I am componentDidMount!');
   }
 
   changeMessage() {
@@ -23,29 +23,30 @@ class LifeCycleMethodsDemo extends Component {
   }
 
   render() {
-    console.log('Hello From Render!');
+    console.log('I am Render!');
     return (
       <div>
         <h3>{this.state.message}</h3>
-        <button onClick={() => this.changeMessage()}>Click Me!</button>
+        <button onClick={() => this.changeMessage()}>Click Me!!</button>
+        <p>--------------------------------</p>
       </div>
     );
   }
 
   shouldComponentUpdate() {
-    console.log('Hello from shouldComponentUpdate!');
+    console.log('I am shouldComponentUpdate!');
     return true;
   }
   getSnapshotBeforeUpdate() {
-    console.log('Hello from getSnapshotBeforeUpdate!');
+    console.log('I am getSnapshotBeforeUpdate!');
     return null;
   }
   componentDidUpdate() {
-    console.log('Hello from componentDidUpdate!');
+    console.log('I am componentDidUpdate!');
   }
 
   componentWillUnmount() {
-    console.log('Hello from componentWillUnmount!');
+    console.log('I am componentWillUnmount!');
   }
 }
 

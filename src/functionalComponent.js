@@ -1,9 +1,10 @@
 import React from 'react';
 
 const FunctionalCompDemo = () => {
-   return (
-      <h2>Hey, I am a functional Component</h2>
-   );
+  return ([
+    <h3>This is a demo of functional component</h3>, 
+    <p>------------------------------</p>
+  ]);
 }
 
 export default FunctionalCompDemo;
